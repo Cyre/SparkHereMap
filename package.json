@@ -1,0 +1,30 @@
+{
+  "name": "sparkheremap",
+  "version": "1.0.0",
+  "description": "SparkHereMap",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cyre/SparkHereMap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cyre/SparkHereMap/issues"
+  },
+  "homepage": "https://github.com/Cyre/SparkHereMap#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "jsonfile": "^5.0.0",
+    "shelljs": "^0.8.3"
+  },
+  "nodemonConfig": {
+    "ignore": ["data/*"]
+  }
+}

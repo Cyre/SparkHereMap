@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Maps</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1549984893" />
+    <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://js.api.here.com/v3/3.0/mapsjs-mapevents.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://js.api.here.com/v3/3.0/mapsjs-ui.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="text">
+      Hora:<%= hora %><br>
+      Fecha:<%= fecha %><br>
+    </div>
+
+    <div class="container" id="container" style="width: 850px">
+      <br>
+      <div class="map-container1" id="map-container1" style="float: left">
+        <div class="text">
+            Mapa Actual
+        </div>
+        <br>
+        <div id="map1" style="width: 400px; height:400px;"></div>
+      </div>
+      <div class="map-container2" id="map-container2" style="float: right">
+        <div class="text">
+            Mapa Futuro
+        </div>
+        <br>
+        <div id="map2" style="width: 400px; height:400px;"></div>
+      </div>
+    </div>
+  <script type="text/javascript" src="mapController.js"></script>
+  </body>
+</html>
